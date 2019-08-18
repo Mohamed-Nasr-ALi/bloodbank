@@ -14,7 +14,7 @@ class Client extends Model
 
     public function bloodtype()
     {
-        return $this->belongsTo('App\Models\BloodType');
+        return $this->belongsTo('App\Models\BloodType','blood_type_id');
     }
 
     public function posts()

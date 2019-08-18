@@ -68,12 +68,7 @@
                                             {{$client->b_o_d}}
                                         </td>
                                         <td>
-{{--                                            {{optional($client->blood_type)->name}}--}}
-                                            @foreach($bloodtypes as $bloodtype)
-                                                @if($client->blood_type_id == $bloodtype->id)
-                                                    {{$bloodtype->name}}
-                                                @endif
-                                            @endforeach
+                                            {{optional($client->bloodtype)->name}}
                                         </td>
                                         <td>
                                             @foreach($cities as $city)
